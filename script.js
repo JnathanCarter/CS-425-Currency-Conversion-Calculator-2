@@ -79,8 +79,8 @@ var Lab4 = (function () {
     };
 
     function convertToEruo(usd) {
-        eur_rate = rates['EUR'];
-        eur = usd * eur_rate;
+        usd_rate = rates['USD'];
+        eur = usd / usd_rate;
         return eur;
     };
 
